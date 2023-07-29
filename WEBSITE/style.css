@@ -40,7 +40,9 @@ h1{
 }
 .odd{
     color: blue;
+    margin-left: 20px;
 }
 .even{
     color: red;
+    margin-right: 20px;
 }
