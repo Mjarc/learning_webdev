@@ -9,6 +9,8 @@ h1{
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold; 
+    text-shadow: 2px 2px 2px chocolate;
+
 }
 /*
 #p1{
