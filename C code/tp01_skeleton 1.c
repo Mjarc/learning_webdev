@@ -97,16 +97,16 @@ int calculateOBEB(int num1, int num2, int num3) {
 
 // QUESTION 5
 void findPrimeFactors(int num) { // prints the prime factors of the given number
-    int factors[100];
-    while (num !=1)
-    {
-        for (int i = 0; i < 100; i++)
-        {
-            
+    for(int i=2; i<=num; i++){
+        if (num%i == 0){
+            if (isPrime(i)==true)
+            {
+                num = num/i;
+                printf("%d, ",i);
+                continue;
+            }
         }
-        
     }
-    
 }
 
 // QUESTION 6
