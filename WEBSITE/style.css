@@ -5,6 +5,7 @@ body{
     background-position: left;
     background-attachment: fixed;
     background-size: cover;
+    background-color: aqua;
 }
 h1{
     border-style: solid;
@@ -44,10 +45,11 @@ h1{
     color:red;
 }
 .even{
-    color: beige;
+    color: coral;
 }
 
 #img1{
     float: left;
-    margin-right: 40px;
+    /*margin-right: 40px;
+    */
 }
