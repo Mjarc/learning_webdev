@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let choices = ["rock","paper","scissors"]
 let playagain;
 
@@ -41,3 +42,18 @@ do{
     playagain = playRound();
 }
 while(playagain !== "no");
+=======
+function fibonacci()
+{
+    let fibo = [1,1];
+    for(let i = 0; i < 8 ; i++)
+    {
+        fibo[i+2]=fibo[i] + fibo[i+1];
+    }
+    for(let i = 0; i < 9 ; i++)
+        console.log(fibo[i]);
+}
+
+fibonacci();
+
+>>>>>>> cb82add3c3b65ef6cf79b63072713cc38cf61687
