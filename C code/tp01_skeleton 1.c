@@ -20,21 +20,62 @@ struct Line {
 // QUESTION 1
 bool isPrime(int num) // returns true or false
 {
-
+    for (int i = 2; i<num; i++)
+    {
+        if (num%i==0)
+        {
+            return false;
+        }
+    }
+    return true;
 }
 
 // QUESTION 2 
 void findPrimesInRange(int start, int end) { //prints the prime numbers in the range
-
+    for (int i = start; i<=end; i++)
+    {
+        if (isPrime(i)==true)
+        {
+            printf("%d", i);
+        }
+    }  
 }
 
 // QUESTION 3
-int greatestCommonDivisor(int a, int b) { // returns gcd
-
+int greatestCommonDivisor(int a, int b) {
+    int greatestdiv;
+    int biggestnum;
+    if (a>=b){
+        biggestnum=a;
+    }
+    else{
+        biggestnum=b;
+    }
+    
+     for (int i = 0; i<biggestnum; i++)
+    {
+        if (a%i==0 && b%i==0)
+        {
+            greatestdiv=i;
+        }
+    }
+    return greatestdiv;
 }
 
-int leastCommonMultiple(int a, int b) { // returns lcm
-
+int leastCommonMultiple(int a, int b) {
+    int biggestnum;
+    int LCM;
+    if (a>=b){
+        biggestnum=a;
+    }
+    else{
+        biggestnum=b;
+    } // returns lcm
+    for (int i = 0; i < biggestnum; i++)
+    {
+        LCM = (a * b) / greatestCommonDivisor(a, b);
+    }
+    
 }
 /*
 int calculateOKEK(int num1, int num2, int num3) {
@@ -56,13 +97,26 @@ int calculateOBEB(int num1, int num2, int num3) {
 
 // QUESTION 5
 void findPrimeFactors(int num) { // prints the prime factors of the given number
-//
-
+    int factors[100];
+    while (num !=1)
+    {
+        for (int i = 0; i < 100; i++)
+        {
+            
+        }
+        
+    }
+    
 }
 
 // QUESTION 6
 int isTriangle(int a, int b, int c) { // returns 1 (for true) or 0 (for false)
-
+    if((a + b > c)&&(b + c > a)
+            &&(c + a > b)) {  
+        return 1;
+    } else {  
+        return 0;
+    }  
 }
 
 //QUESTION 7
@@ -77,7 +131,7 @@ int collatz(int num) { // returns steps (int)
 
 // QUESTION 9
 int searchInArray(int arr[], int size, int target) { // returns count of the target number in the array
-                                                    // should print the following part
+                                                   // should print the following part
 
 
     //printf("The number %d is found %d times in the array.\n", target, count);
