@@ -1,0 +1,1 @@
+Program çalışıyor ama çalışmaz ise diye compile etmede kullandığım main dosyası ve programın kendisi mevcuttur.
