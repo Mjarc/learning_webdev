@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <math.h>
 #include <string.h>
+#include <stdlib.h>
 #include "TP02.h"
 
 #define MAX_STRING_LENGTH 50
@@ -21,7 +22,7 @@ int main()
     scanf("%s", input);
     token = strtok(input, "-");
 
-    int case_no = atoi(token);
+    int case_no = atof(token);
     
     while (token != NULL) {
         if( (case_no == 1) || (case_no == 2)  )
@@ -91,10 +92,7 @@ int main()
 
             for (int i = 0; i<arr_len_7; i++)
             {
-                if(values[i+2])
-                {
-                    arr[i] = values[i+2];
-                }
+                arr[i] = values[i+2];
             }
 
             if(isConsecutive(arr_len_7, arr))
@@ -112,11 +110,9 @@ int main()
             int arr_len_8 = values[1];
             for (int i = 0; i<arr_len_8; i++)
             {
-                if(values[i+2])
-                {
-                    arr[i] = values[i+2];
-                }
+                arr[i] = values[i+2];
             }
+
 
             printf("The smallest missing value is %d\n",findMissingSmallest(arr_len_8, arr));
             break;
@@ -141,6 +137,7 @@ int main()
             {
                 printf("Error: No prime number less than %d found.\n", values[1]);
             }
+            break;
         case 11:
             findHardyRamanujanNumbers(values[1]);
             // TODO

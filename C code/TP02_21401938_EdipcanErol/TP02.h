@@ -1,4 +1,17 @@
+#ifndef TP02_H
+#define TP02_H
 
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+#include <string.h>
+
+#define MAX_STRING_LENGTH 50
+#define INPUT_SIZE 50
+#define INT_TOKEN 50
+#define ARRAY_LEN 50
+
+void charPermuHelper(char *cht, int left, int right);
 
 void charPermu(char *cht);
 
@@ -22,3 +35,4 @@ int closest_prime(int value);
 
 void findHardyRamanujanNumbers(int limit);
 
+#endif
